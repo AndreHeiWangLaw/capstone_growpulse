@@ -7,8 +7,8 @@ app.use(express.json());
 const OAuth2 = google.auth.OAuth2;
 
 const oauth2Client = new OAuth2(
-    //"412920959953-0dgccdevi6vacqaqg0vdabnk9oi8ddes.apps.googleusercontent.com", // Client ID
-    //"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", // Client Secret
+    "412920959953-0dgccdevi6vacqaqg0vdabnk9oi8ddes.apps.googleusercontent.com", // Client ID
+    "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", // Client Secret
     "https://developers.google.com/oauthplayground" // Redirect URL
 );
 
@@ -26,8 +26,8 @@ async function sendEmail(req, res) {
                 type: 'OAuth2',
                 user: 'growpulse.help@gmail.com',
                 accessToken: accessToken.token,
-                //clientId: "412920959953-0dgccdevi6vacqaqg0vdabnk9oi8ddes.apps.googleusercontent.com",
-                //clientSecret: "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",
+                clientId: "412920959953-0dgccdevi6vacqaqg0vdabnk9oi8ddes.apps.googleusercontent.com",
+                clientSecret: "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",
                 refreshToken: "1//04V5iDXp0A0S_CgYIARAAGAQSNwF-L9Ir707udq6gkW_YmxLwWoSD2PEwBUWI_CuHOlAHYq1nM-srQwd8lpkLeDTdw8uQ1aIB_-w"
             }
         });
